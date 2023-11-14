@@ -1,0 +1,11 @@
+version: "3"
+services:
+  node-app:
+    build:
+      context: .
+      target: production
+      # args:
+      #   - NODE_ENV=peoduction
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=production
